@@ -9,14 +9,50 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Button(action: {
-            print("hello button")
-        }) {
-        Text("+")
-            .font(.title)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.orange)
+        HStack {
+            Button(action: {
+                print("button 1")
+            }) {
+                Text("1")
+                    .font(.system(size: 38))
+                    .foregroundColor(.white)
+                    .frame(width: 88, height: 88)
+                    .background(Color.orange)
+                    .cornerRadius(44)
+            }
+            
+            Button(action: {
+                print("button 2")
+            }) {
+                Text("2")
+                    .font(.system(size: 38))
+                    .foregroundColor(.white)
+                    .frame(width: 88, height: 88)
+                    .background(Color.orange)
+                    .cornerRadius(44)
+            }
+            
+            Button(action: {
+                print("button 2")
+            }) {
+                Text("2")
+                    .font(.system(size: 38))
+                    .foregroundColor(.white)
+                    .frame(width: 88, height: 88)
+                    .background(Color.orange)
+                    .cornerRadius(44)
+            }
+            
+            Button(action: {
+                print("button 2")
+            }) {
+                Text("2")
+                    .font(.system(size: 38))
+                    .foregroundColor(.white)
+                    .frame(width: 88, height: 88)
+                    .background(Color.orange)
+                    .cornerRadius(44)
+            }
         }
     }
 }

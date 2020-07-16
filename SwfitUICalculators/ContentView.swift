@@ -9,11 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        Button(action: {
+            print("hello button")
+        }) {
         Text("+")
             .font(.title)
             .foregroundColor(.white)
             .padding()
             .background(Color.orange)
+        }
     }
 }
 

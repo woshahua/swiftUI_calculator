@@ -28,12 +28,14 @@ struct CalculatorButton: View {
 }
 
 struct ContentView: View {
+    let row: [CalculatorButtonItem] = [.digit(1), .digit(2), .digit(3), .op(.plus)]
     
     var body: some View {
+        
         HStack {
-            CalculatorButton(title: "1", size: CGSize(width: 88, height: 88), backgroundColor: Color.orange, action: {
-                print("test1")
-            })
+            ForEach(row, id: \.self) { item in
+                CalculatorButton(title: item.title, size: item.size, backgroundColor: item.backgroundColor, action: {print("hellO")} )
+            }
         }
     }
 }
@@ -43,3 +45,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

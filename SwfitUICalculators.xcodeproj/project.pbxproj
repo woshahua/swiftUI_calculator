@@ -15,6 +15,7 @@
 		D3E43D4024BA0B1E0089B867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E43D3E24BA0B1E0089B867 /* LaunchScreen.storyboard */; };
 		D3E43D4B24BA0B1F0089B867 /* SwfitUICalculatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E43D4A24BA0B1F0089B867 /* SwfitUICalculatorsTests.swift */; };
 		D3E43D5624BA0B1F0089B867 /* SwfitUICalculatorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E43D5524BA0B1F0089B867 /* SwfitUICalculatorsUITests.swift */; };
+		D3E43DBA24C4921C0089B867 /* CalculatorButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E43DB924C4921C0089B867 /* CalculatorButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D3E43D5124BA0B1F0089B867 /* SwfitUICalculatorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwfitUICalculatorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E43D5524BA0B1F0089B867 /* SwfitUICalculatorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUICalculatorsUITests.swift; sourceTree = "<group>"; };
 		D3E43D5724BA0B1F0089B867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E43DB924C4921C0089B867 /* CalculatorButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				D3E43D3324BA0B1C0089B867 /* AppDelegate.swift */,
 				D3E43D3524BA0B1C0089B867 /* SceneDelegate.swift */,
 				D3E43D3724BA0B1C0089B867 /* ContentView.swift */,
+				D3E43DB924C4921C0089B867 /* CalculatorButtonModel.swift */,
 				D3E43D3924BA0B1E0089B867 /* Assets.xcassets */,
 				D3E43D3E24BA0B1E0089B867 /* LaunchScreen.storyboard */,
 				D3E43D4124BA0B1E0089B867 /* Info.plist */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E43D3424BA0B1C0089B867 /* AppDelegate.swift in Sources */,
+				D3E43DBA24C4921C0089B867 /* CalculatorButtonModel.swift in Sources */,
 				D3E43D3624BA0B1C0089B867 /* SceneDelegate.swift in Sources */,
 				D3E43D3824BA0B1C0089B867 /* ContentView.swift in Sources */,
 			);

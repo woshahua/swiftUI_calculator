@@ -48,10 +48,15 @@ struct ContentView: View {
         [.digit(0), .dot, .op(.equal)],
     ]
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(alignment: .trailing, spacing: 12) {
+            Spacer()
+            Text("0")
+                .font(.system(size: 76))
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+            
             ForEach(pad, id: \.self) { row in
                 CalculatorButtonRow(row: row)
-            }
+            }.padding(.bottom, 0)
         }
     }
 }

@@ -41,7 +41,13 @@ struct CalculatorButton: View {
 
 struct ContentView: View {
     var body: some View {
-        CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+        VStack(spacing: 8) {
+            CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+            CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+            CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+            CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+            CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
+        }
     }
 }
 

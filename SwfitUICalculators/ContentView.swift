@@ -7,52 +7,33 @@
 
 import SwiftUI
 
+
+struct CalculatorButton: View {
+    let fontSize: CGFloat = 38
+    let title: String
+    let size: CGSize
+    let backgroundColor: Color
+    let action: () -> Void
+    
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .font(.system(size: fontSize))
+                .foregroundColor(.white)
+                .frame(width: size.width, height: size.height)
+                .background(backgroundColor)
+                .cornerRadius(size.width / 2)
+        }
+    }
+}
+
 struct ContentView: View {
+    
     var body: some View {
         HStack {
-            Button(action: {
-                print("button 1")
-            }) {
-                Text("1")
-                    .font(.system(size: 38))
-                    .foregroundColor(.white)
-                    .frame(width: 88, height: 88)
-                    .background(Color.orange)
-                    .cornerRadius(44)
-            }
-            
-            Button(action: {
-                print("button 2")
-            }) {
-                Text("2")
-                    .font(.system(size: 38))
-                    .foregroundColor(.white)
-                    .frame(width: 88, height: 88)
-                    .background(Color.orange)
-                    .cornerRadius(44)
-            }
-            
-            Button(action: {
-                print("button 2")
-            }) {
-                Text("2")
-                    .font(.system(size: 38))
-                    .foregroundColor(.white)
-                    .frame(width: 88, height: 88)
-                    .background(Color.orange)
-                    .cornerRadius(44)
-            }
-            
-            Button(action: {
-                print("button 2")
-            }) {
-                Text("2")
-                    .font(.system(size: 38))
-                    .foregroundColor(.white)
-                    .frame(width: 88, height: 88)
-                    .background(Color.orange)
-                    .cornerRadius(44)
-            }
+            CalculatorButton(title: "1", size: CGSize(width: 88, height: 88), backgroundColor: Color.orange, action: {
+                print("test1")
+            })
         }
     }
 }

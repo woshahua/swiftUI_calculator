@@ -7,7 +7,19 @@
 
 import SwiftUI
 
+// a wrapper of row of button
+struct CalculatorButtonRow: View {
+    let row: [CalculatorButtonItem]
+    var body: some View {
+        HStack {
+            ForEach(row, id: \.self) { item in
+                CalculatorButton(title: item.title, size: item.size, backgroundColor: item.backgroundColor, action: {print("hellO")} )
+            }
+        }
+    }
+}
 
+// most low view
 struct CalculatorButton: View {
     let fontSize: CGFloat = 38
     let title: String
@@ -28,15 +40,8 @@ struct CalculatorButton: View {
 }
 
 struct ContentView: View {
-    let row: [CalculatorButtonItem] = [.digit(1), .digit(2), .digit(3), .op(.plus)]
-    
     var body: some View {
-        
-        HStack {
-            ForEach(row, id: \.self) { item in
-                CalculatorButton(title: item.title, size: item.size, backgroundColor: item.backgroundColor, action: {print("hellO")} )
-            }
-        }
+        CalculatorButtonRow(row: [.digit(1), .digit(2), .digit(3), .op(.plus)])
     }
 }
 

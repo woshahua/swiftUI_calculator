@@ -7,7 +7,7 @@
 import Foundation
 import SwiftUI
 
-enum CalculatorButtonItem: Hashable {
+enum CalculatorButtonItem: {
     
     enum Op: String {
         case plus = "+"
@@ -52,3 +52,5 @@ extension CalculatorButtonItem {
         }
     }
 }
+
+extension CalculatorButtonItem: Hashable {}
